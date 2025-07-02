@@ -24,7 +24,7 @@ body {
 
 /*overriding bootstrap button colors*/
 #calendar-options .btn {
-  color: var(--grist-theme-text);
+  color: red;
   background-color: var(--grist-theme-button-group-bg);
   border-color: var(--grist-theme-button-group-border);
   padding: 4px 10px;
@@ -122,7 +122,7 @@ body {
   border: none;
   box-shadow: 0 2px 20px 0 var(--grist-theme-menu-shadow, rgba(38, 38, 51, 0.6));
   background-color: var(--grist-theme-popup-bg);
-  color: var(--grist-theme-text);
+  color: red;
 }
 
 /* On an event-edit card, hide those detail sections for which we have nothing to show */
@@ -273,7 +273,7 @@ body {
 /*** BEGIN datepicker-related styling ***/
 
 .tui-datepicker {
-  color: var(--grist-theme-text);
+  color: red;
   border: none;
   box-shadow: 0 2px 20px 0 var(--grist-theme-menu-shadow, rgba(38, 38, 51, 0.6));
 }
@@ -310,7 +310,7 @@ body {
 
 .tui-datepicker .tui-is-selectable.tui-is-selected,
 .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected {
-  color: var(--grist-theme-text);
+  color: red;
   background-color: var(--grist-theme-date-picker-range-start-end-bg);
 }
 
@@ -319,7 +319,7 @@ body {
 }
 
 .tui-datepicker.tui-rangepicker .tui-is-selected-range {
-  color: var(--grist-theme-text);
+  color: red;
   background-color: var(--grist-theme-date-picker-range-bg);
 }
 
@@ -331,7 +331,7 @@ body {
 .tui-calendar td,
 .tui-calendar .tui-calendar-body-header th,
 .tui-datepicker .tui-calendar-title {
-  color: var(--grist-theme-text);
+  color: red;
 }
 
 .tui-datepicker .tui-is-selectable:hover {
@@ -349,7 +349,7 @@ body {
   top: 18px;
   width: 16px;
   height: 16px;
-  background-color: var(--grist-theme-text);
+  background-color: red;
 }
 
 .tui-calendar-btn {
@@ -371,12 +371,12 @@ body {
 }
 
 .tui-calendar .tui-calendar-title-today {
-  color: var(--grist-theme-text);
+  color: red;
   background-color: var(--grist-theme-date-picker-range-bg);
 }
 
 .tui-calendar .tui-calendar-title-today:hover {
-  color: var(--grist-theme-text);
+  color: red;
   background-color: var(--grist-theme-date-picker-range-bg-hover);
 }
 
@@ -421,19 +421,19 @@ input:checked + label {
 }
 
 .toastui-calendar-timegrid-time {
-  color: var(--grist-theme-text);
+  color: red;
 }
 
 .toastui-calendar-template-alldayTitle {
-  color: var(--grist-theme-text);
+  color: red;
 }
 
 .toastui-calendar-template-monthDayName{
-  color: var(--grist-theme-text);
+  color: red;
 }
 
 .toastui-calendar-weekday-event-dot + .toastui-calendar-weekday-event-title  {
-  color: var(--grist-theme-text) !important;
+  color: red !important;
 }
 
 .toastui-calendar-week-view-day-names {
@@ -475,7 +475,7 @@ input:checked + label {
 }
 
 .toastui-calendar-grid-selection-label {
-  color: var(--grist-theme-text);
+  color: red;
 }
 
 .toastui-calendar-see-more {
@@ -486,7 +486,7 @@ input:checked + label {
 
 .toastui-calendar-more-title-date,
 .toastui-calendar-more-title-day {
-  color: var(--grist-theme-text);
+  color: red;
 }
 
 @media (max-width: 575.98px) {
