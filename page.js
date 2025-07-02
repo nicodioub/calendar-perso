@@ -147,8 +147,11 @@ class CalendarHandler {
     return {
       week: {
   taskView: false,
-  dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+  startDayOfWeek: 1, // Commence le lundi
+  dayNames: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], // Affichage
+  workweek: true // ⚠️ Cache samedi et dimanche !
 },
+
 month: {
   dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
 },
