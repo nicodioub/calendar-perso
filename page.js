@@ -147,7 +147,7 @@ class CalendarHandler {
     return {
       week: {
         taskView: false,
-        dayNames: [ 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven'],
+        dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
         hourStart: 7,
         hourEnd:19,
         workweek:true,
