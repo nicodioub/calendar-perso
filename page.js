@@ -151,7 +151,7 @@ class CalendarHandler {
         hourStart: 7,
         hourEnd:19,
         workweek:true,
-        hourFormat: '24',
+        hourFormat: 'HH',
 
       },
       month: {
@@ -185,7 +185,7 @@ class CalendarHandler {
           return t('Update')
         },
         allDayTitle() {
-          return 'Toute la journée'
+          return 'All Day'
         },
         popupIsAllday() {
           return t('All Day')
