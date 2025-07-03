@@ -148,8 +148,9 @@ class CalendarHandler {
       week: {
         taskView: false,
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
-        hourStart: 9,
+        hourStart: 7,
         hourEnd:19,
+        
       },
       month: {
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
