@@ -1,6 +1,24 @@
 {
-  "day": "Jour",
-  "week": "Semaine",
-  "month": "Mois",
-  "today": "Aujourd'hui"
+  "Sundie": "Dimanche",
+  "Mon": "Lundi",
+  "Tue": "Mardi",
+  "Wed": "Mercredi",
+  "Thu": "Jeudi",
+  "Fri": "Vendredi",
+  "Sat": "Samedi",
+  "Delete": "Supprimer",
+  "Save": "Enregistrer",
+  "Edit": "Modifier",
+  "Update": "Mettre à jour",
+  "All Day": "Toute la journée",
+  "Start Date": "Date de début",
+  "End Date": "Date de fin",
+  "Is All Day": "Toute la journée",
+  "Title": "Titre",
+  "Type": "Type",
+  "starting point of event": "début de l'événement",
+  "ending point of event": "fin de l'événement",
+  "is event all day long": "événement sur toute la journée",
+  "title of event": "titre de l'événement",
+  "event category and style": "catégorie et style de l'événement"
 }
