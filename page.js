@@ -151,7 +151,7 @@ class CalendarHandler {
         hourStart: 7,
         hourEnd:19,
         workweek:true,
-        hourFormat: 'HH',
+        hourFormat: 'H',
 
       },
       month: {
