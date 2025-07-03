@@ -151,7 +151,8 @@ class CalendarHandler {
         hourStart: 7,
         hourEnd:19,
         workweek:true,
-        hourFormat: 'H',
+        hourFormat: 'HH',
+        locale:'fr',
 
       },
       month: {
