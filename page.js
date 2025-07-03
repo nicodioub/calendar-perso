@@ -25,7 +25,7 @@ function getLanguage() {
   } else {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    this._lang = urlParams.get('language') ?? 'en'
+    this._lang = urlParams.get('language') ?? 'fr'
     return this._lang;
   }
 }
