@@ -150,7 +150,8 @@ class CalendarHandler {
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
         hourStart: 7,
         hourEnd:19,
-        
+        workweek:true,
+
       },
       month: {
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],

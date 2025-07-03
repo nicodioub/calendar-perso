@@ -525,10 +525,3 @@ input:checked + label {
   color: inherit;
 }
 
-/* Masquer dimanche (1ère colonne) et samedi (7ème colonne) dans ToastUI Calendar */
-.toastui-calendar-daygrid-cell:first-child,
-.toastui-calendar-daygrid-cell:last-child,
-.toastui-calendar-weekday-grid-cell:first-child,
-.toastui-calendar-weekday-grid-cell:last-child {
-  display: none !important;
-}
