@@ -153,6 +153,7 @@ class CalendarHandler {
         workweek:true,
         hourFormat: 'HH',
         locale:'fr',
+        alldayView:false,
 
       },
       month: {
