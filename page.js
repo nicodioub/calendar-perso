@@ -25,7 +25,7 @@ function getLanguage() {
   } else {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    this._lang = urlParams.get('language') ?? 'fr'
+    this._lang = urlParams.get('language') ?? 'en'
     return this._lang;
   }
 }
@@ -146,16 +146,12 @@ class CalendarHandler {
   _getCalendarOptions() {
     return {
       week: {
-  taskView: false,
-  startDayOfWeek: 1, // Commence le lundi
-  dayNames: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], // Affichage
-  workweek: true // ⚠️ Cache samedi et dimanche !
-},
-
-month: {
-  dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-},
-
+        taskView: false,
+        dayNames: [t('Sun'), t('Mon'), t('Tue'), t('Wed'), t('Thu'), t('Fri'), t('Sat')],
+      },
+      month: {
+        dayNames: [t('Sun'), t('Mon'), t('Tue'), t('Wed'), t('Thu'), t('Fri'), t('Sat')],
+      },
       usageStatistics: false,
       theme: this._calendarTheme(),
       defaultView: 'week',

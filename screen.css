@@ -2,19 +2,19 @@
   --icon-ArrowLeft: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZD0iTSA4Ljc4NDkzNDYsMTQuNjcwNzUzIDIuNzg0NjI5Niw4LjYyMTMyMjUgYyAtMC4zNjgyMDg0LC0wLjM3MTIzIC0wLjM2ODIwODQsLTAuOTczMSAwLC0xLjM0NDMyIGwgNi4wMDAzMDUsLTYuMDQ5NDI0IGMgMC4zNjgyMSwtMC4zNzEyMjI3NiAwLjk2NTE5LC0wLjM3MTIyMjc2IDEuMzMzNDAwNCwwIDAuMzY4MjEsMC4zNzEyMjMgMC4zNjgyMSwwLjk3MzA5NCAwLDEuMzQ0MzE0IGwgLTQuMzkwNzUwNCw0LjQyNjY5IGggNy43ODA4OTA0IHYgMS45MDExNSBIIDUuNzI3NTg0NiBsIDQuMzkwNzUwNCw0LjQyNjcyMDUgYyAwLjM2ODIxLDAuMzcxMiAwLjM2ODIxLDAuOTczMSAwLDEuMzQ0MyAtMC4zNjgyMTA0LDAuMzcxMiAtMC45NjUxOTA0LDAuMzcxMiAtMS4zMzM0MDA0LDAgeiIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=');
   --icon-ArrowRight: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZD0iTSA3LjIzMjAxMzcsMTQuNjcwNzUzIDEzLjIzMjMxOSw4LjYyMTMyMjUgYyAwLjM2ODIwOCwtMC4zNzEyMyAwLjM2ODIwOCwtMC45NzMxIDAsLTEuMzQ0MzIgTCA3LjIzMjAxMzcsMS4yMjc1Nzg1IGMgLTAuMzY4MjEsLTAuMzcxMjIyNzYgLTAuOTY1MTksLTAuMzcxMjIyNzYgLTEuMzMzNDAwNCwwIC0wLjM2ODIxLDAuMzcxMjIzIC0wLjM2ODIxLDAuOTczMDk0IDAsMS4zNDQzMTQgbCA0LjM5MDc1MDcsNC40MjY2OSBIIDIuNTA4NDczMyB2IDEuOTAxMTUgSCAxMC4yODkzNjQgTCA1Ljg5ODYxMzMsMTMuMzI2NDUzIGMgLTAuMzY4MjEsMC4zNzEyIC0wLjM2ODIxLDAuOTczMSAwLDEuMzQ0MyAwLjM2ODIxMDQsMC4zNzEyIDAuOTY1MTkwNCwwLjM3MTIgMS4zMzM0MDA0LDAgeiIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=');
   --icon-Tick: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjYxODMwNjksNC42NzcwMjg0NyBDMTEuNzk2Njc4OSw0LjQ2NjIyNTE3IDEyLjExMjE2NzgsNC40Mzk5MzQ0MyAxMi4zMjI5NzExLDQuNjE4MzA2NDUgQzEyLjUzMzc3NDQsNC43OTY2Nzg0OCAxMi41NjAwNjUyLDUuMTEyMTY3NDEgMTIuMzgxNjkzMSw1LjMyMjk3MDcxIEw2LjUzMDY4ODI3LDEyLjIzNzc5NDYgTDMuNjQ2NDQ2NjEsOS4zNTM1NTI5OCBDMy40NTExODQ0Niw5LjE1ODI5MDg0IDMuNDUxMTg0NDYsOC44NDE3MDgzNSAzLjY0NjQ0NjYxLDguNjQ2NDQ2MiBDMy44NDE3MDg3Niw4LjQ1MTE4NDA2IDQuMTU4MjkxMjQsOC40NTExODQwNiA0LjM1MzU1MzM5LDguNjQ2NDQ2MiBMNi40NjkzMTE3MywxMC43NjIyMDQ1IEwxMS42MTgzMDY5LDQuNjc3MDI4NDcgWiIgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9zdmc+');
-}https://github.com/nicodioub/calendar-perso/blob/main/screen.css
+}
 
 html, body {
   height: 100%;
 }
 
 body {
-  background-color: red !important;
+  background-color: var(--grist-theme-page-panels-main-panel-bg) !important;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
 }
 
 #calendar-options {
-  color: red;
+  color: var(--grist-theme-text);
   display: flex;
   gap: 10px 15px;
   flex-wrap: wrap;
@@ -24,9 +24,9 @@ body {
 
 /*overriding bootstrap button colors*/
 #calendar-options .btn {
-  color: red;
-  background-color: red;
-  border-color:red;
+  color: var(--grist-theme-text);
+  background-color: var(--grist-theme-button-group-bg);
+  border-color: var(--grist-theme-button-group-border);
   padding: 4px 10px;
   outline: none;
 }
@@ -47,7 +47,7 @@ body {
   -webkit-mask-size: contain;
   width: 13px;
   height: 13px;
-  background-color: var(--icon-color, var(--grist-theme-text, red));
+  background-color: var(--icon-color, var(--grist-theme-text, black));
 }
 
 .icon-arrow-left {
@@ -61,8 +61,8 @@ body {
 }
 
 #calendar-options .btn:hover {
-  background-color: red;
-  border-color:red;
+  background-color: var(--grist-theme-hover);
+  border-color: var(--grist-theme-button-group-border-hover);
 }
 
 #calendar-perspective-buttons .btn:first-child {
@@ -111,7 +111,7 @@ body {
 }
 
 .toastui-calendar-popup-container .toastui-calendar-template-popupDetailDate {
-  color:red;
+  color: var(--grist-theme-text-light);
 }
 
 .toastui-calendar-detail-container,
@@ -122,7 +122,7 @@ body {
   border: none;
   box-shadow: 0 2px 20px 0 var(--grist-theme-menu-shadow, rgba(38, 38, 51, 0.6));
   background-color: var(--grist-theme-popup-bg);
-  color: red;
+  color: var(--grist-theme-text);
 }
 
 /* On an event-edit card, hide those detail sections for which we have nothing to show */
@@ -142,10 +142,10 @@ body {
 
 .toastui-calendar-popup-section-item {
   border: 1px solid var(--grist-theme-input-border);
-  background-color: red;
+  background-color: var(--grist-theme-input-bg);
 }
 .toastui-calendar-popup-section-item input {
-  background-color: red;
+  background-color: var(--grist-theme-input-bg);
 }
 .toastui-calendar-popup-section-allday {
   border: none;
@@ -157,33 +157,33 @@ body {
   width: calc(100% - 16px);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-right .toastui-calendar-popup-arrow-border {
-  border-left-color: red;
+  border-left-color: var(--grist-theme-modal-border-dark);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-right .toastui-calendar-popup-arrow-fill {
-  border-left-color: red;
+  border-left-color: var(--grist-theme-popup-bg);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-left .toastui-calendar-popup-arrow-border {
-  border-right-color: red;
+  border-right-color: var(--grist-theme-modal-border-dark);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-left .toastui-calendar-popup-arrow-fill {
-  border-right-color: red;
+  border-right-color: var(--grist-theme-popup-bg);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-top .toastui-calendar-popup-arrow-border {
-  border-bottom-color: red;
+  border-bottom-color: var(--grist-theme-modal-border-dark);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-top .toastui-calendar-popup-arrow-fill {
-  border-bottom-color: red;
+  border-bottom-color: var(--grist-theme-popup-bg);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-bottom .toastui-calendar-popup-arrow-border {
-  border-top-color: red;
+  border-top-color: var(--grist-theme-modal-border-dark);
 }
 .toastui-calendar-popup-arrow.toastui-calendar-bottom .toastui-calendar-popup-arrow-fill {
-  border-top-color: red;
+  border-top-color: var(--grist-theme-popup-bg);
 }
 .toastui-calendar-popup-button.toastui-calendar-popup-confirm {
   /* match grist primary button style */
-  background-color: red;
-  color: red;
+  background-color: var(--grist-theme-control-primary-bg);
+  color: var(--grist-theme-control-primary-fg);
   border: none;
   border-radius: 4px;
   margin: 4px 0;
@@ -273,7 +273,7 @@ body {
 /*** BEGIN datepicker-related styling ***/
 
 .tui-datepicker {
-  color: red;
+  color: var(--grist-theme-text);
   border: none;
   box-shadow: 0 2px 20px 0 var(--grist-theme-menu-shadow, rgba(38, 38, 51, 0.6));
 }
@@ -310,7 +310,7 @@ body {
 
 .tui-datepicker .tui-is-selectable.tui-is-selected,
 .tui-datepicker.tui-rangepicker .tui-is-selectable.tui-is-selected {
-  color: red;
+  color: var(--grist-theme-text);
   background-color: var(--grist-theme-date-picker-range-start-end-bg);
 }
 
@@ -319,7 +319,7 @@ body {
 }
 
 .tui-datepicker.tui-rangepicker .tui-is-selected-range {
-  color: red;
+  color: var(--grist-theme-text);
   background-color: var(--grist-theme-date-picker-range-bg);
 }
 
@@ -331,7 +331,7 @@ body {
 .tui-calendar td,
 .tui-calendar .tui-calendar-body-header th,
 .tui-datepicker .tui-calendar-title {
-  color: red;
+  color: var(--grist-theme-text);
 }
 
 .tui-datepicker .tui-is-selectable:hover {
@@ -349,7 +349,7 @@ body {
   top: 18px;
   width: 16px;
   height: 16px;
-  background-color: red;
+  background-color: var(--grist-theme-text);
 }
 
 .tui-calendar-btn {
@@ -371,12 +371,12 @@ body {
 }
 
 .tui-calendar .tui-calendar-title-today {
-  color: red;
+  color: var(--grist-theme-text);
   background-color: var(--grist-theme-date-picker-range-bg);
 }
 
 .tui-calendar .tui-calendar-title-today:hover {
-  color: red;
+  color: var(--grist-theme-text);
   background-color: var(--grist-theme-date-picker-range-bg-hover);
 }
 
@@ -421,19 +421,19 @@ input:checked + label {
 }
 
 .toastui-calendar-timegrid-time {
-  color: red;
+  color: var(--grist-theme-text);
 }
 
 .toastui-calendar-template-alldayTitle {
-  color: red;
+  color: var(--grist-theme-text);
 }
 
 .toastui-calendar-template-monthDayName{
-  color: red;
+  color: var(--grist-theme-text);
 }
 
 .toastui-calendar-weekday-event-dot + .toastui-calendar-weekday-event-title  {
-  color: red !important;
+  color: var(--grist-theme-text) !important;
 }
 
 .toastui-calendar-week-view-day-names {
@@ -475,7 +475,7 @@ input:checked + label {
 }
 
 .toastui-calendar-grid-selection-label {
-  color: red;
+  color: var(--grist-theme-text);
 }
 
 .toastui-calendar-see-more {
@@ -486,7 +486,7 @@ input:checked + label {
 
 .toastui-calendar-more-title-date,
 .toastui-calendar-more-title-day {
-  color: red;
+  color: var(--grist-theme-text);
 }
 
 @media (max-width: 575.98px) {

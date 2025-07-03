@@ -12,7 +12,7 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Widget Calendrier</title>
+    <title>Calendar Widget</title>
 </head>
 <body>
 <div id="calendar-container">
@@ -24,24 +24,24 @@
             <button id="calendar-button-next" class="btn btn-sm" onclick="calendarHandler.calendarNext()">
                 <div class="icon icon-arrow-right"></div>
             </button>
-            <button id="calendar-button-today" class="btn btn-sm" data-i18n="today" onclick="calendarHandler.calendarToday()">Aujourd'hui
+            <button id="calendar-button-today" class="btn btn-sm" data-i18n="today" onclick="calendarHandler.calendarToday()">Today
             </button>
         </div>
         <div id="calendar-perspective-buttons" class="btn-group btn-group-sm" data-toggle="buttons">
             <label id="calendar-day-label" class="btn" for="calendar-day" >
-                <input type="radio" id="calendar-day" class="btn-check" name="calendar-options" value="jour"
+                <input type="radio" id="calendar-day" class="btn-check" name="calendar-options" value="day"
                        onchange="calendarViewChanges(this)" >
-                <span data-i18n="jour">Jour</span>
+                <span data-i18n="day">Day</span>
             </label>
             <label id="calendar-week-label" class="btn" for="calendar-week" >
                 <input type="radio" id="calendar-week" class="btn-check" name="calendar-options" value="week"
                        onchange="calendarViewChanges(this)">
-                <span data-i18n="week">Semaine</span>
+                <span data-i18n="week">Week</span>
             </label>
             <label id="calendar-month-label" class="btn" for="calendar-month" >
                 <input type="radio" id="calendar-month" class="btn-check" name="calendar-options" value="month"
                        onchange="calendarViewChanges(this)" >
-                <span data-i18n="month">Mois</span>
+                <span data-i18n="month">Month</span>
             </label>
         </div>
         <time id="calendar-title"></time>
