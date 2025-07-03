@@ -31,7 +31,7 @@
             <label id="calendar-day-label" class="btn" for="calendar-day" >
                 <input type="radio" id="calendar-day" class="btn-check" name="calendar-options" value="day"
                        onchange="calendarViewChanges(this)" >
-                <span>Jour</span>
+                <span data-i18n="day">Jour</span>
             </label>
             <label id="calendar-week-label" class="btn" for="calendar-week" >
                 <input type="radio" id="calendar-week" class="btn-check" name="calendar-options" value="week"
@@ -72,6 +72,27 @@
 <script src="https://cdn.jsdelivr.net/npm/i18next@23.5.1/i18next.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/i18nextHttpBackend.min.js"></script>
 
-<script src="page.js"></script>
+<script src="page.js">
+
+  
+i18next
+  .use(i18nextHttpBackend)
+  .init({
+    lng: 'fr',
+    fallbackLng: 'fr',
+    backend: {
+      loadPath: 'fr.json' // chemin vers ton fichier de traduction
+    }
+  }, function(err, t) {
+    // Remplace le texte de tous les éléments avec data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      const key = el.getAttribute('data-i18n');
+      el.textContent = t(key);
+    });
+    // Rends la fonction t() globale si besoin dans ton JS
+    window.t = t;
+  });
+
+</script>
 </body>
 </html>
