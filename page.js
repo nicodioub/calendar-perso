@@ -184,7 +184,7 @@ class CalendarHandler {
           return t('Update')
         },
         allDayTitle() {
-          return t('All Day')
+          return 'Toute la journée'
         },
         popupIsAllday() {
           return t('All Day')
