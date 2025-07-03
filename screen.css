@@ -532,3 +532,22 @@ input:checked + label {
   content: "" !important;
   display: none !important;
 }
+
+
+/* Masquer dimanche (1ère colonne) et samedi (7ème colonne) dans ToastUI Calendar */
+
+/* Vue semaine */
+.toastui-calendar-week-view .toastui-calendar-weekday-grid-cell:first-child,
+.toastui-calendar-week-view .toastui-calendar-weekday-grid-cell:last-child,
+.toastui-calendar-week-view .toastui-calendar-day-name-item:first-child,
+.toastui-calendar-week-view .toastui-calendar-day-name-item:last-child {
+  display: none !important;
+}
+
+/* Vue mois */
+.toastui-calendar-month-daygrid-cell:first-child,
+.toastui-calendar-month-daygrid-cell:last-child,
+.toastui-calendar-month-day-name:first-child,
+.toastui-calendar-month-day-name:last-child {
+  display: none !important;
+}
