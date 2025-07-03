@@ -50,7 +50,7 @@ function isRecordValid(record) {
 }
 
 function getMonthName() {
-  return calendarHandler.calendar.getDate().toDate().toLocaleString(getLanguage(), {month: 'long', year: 'numeric'})
+  return calendarHandler.calendar.getDate().toDate().toLocaleString('fr-FR', {month: 'long', year: 'numeric'});
 }
 
 class CalendarHandler {
