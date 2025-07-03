@@ -153,11 +153,11 @@ class CalendarHandler {
         workweek:true,
         hourFormat: 'HH',
         locale:'fr',
-        alldayView:false,
-
+        alldayView: false, // Hide the all-day section in week view.
       },
       month: {
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+        alldayView: false,
       },
       usageStatistics: false,
       theme: this._calendarTheme(),
