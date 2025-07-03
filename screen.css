@@ -525,3 +525,10 @@ input:checked + label {
   color: inherit;
 }
 
+.toastui-calendar-timegrid-hour-label {
+  text-transform: none !important;
+}
+.toastui-calendar-timegrid-hour-label::after {
+  content: "" !important;
+  display: none !important;
+}
