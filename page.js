@@ -146,8 +146,10 @@ class CalendarHandler {
   _getCalendarOptions() {
     return {
       week: {
-        taskView: true,
+        taskView: false,
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+        hourStart: 9,
+        hourEnd:19,
       },
       month: {
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
