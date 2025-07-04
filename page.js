@@ -182,14 +182,7 @@ class CalendarHandler {
         },
 
          
-       timegridDisplayPrimaryTime: function({ time }) {
-        // Construct a fake TZDate from hour + minutes if needed
-        const tz = new TZDate(); // Or however your TZDate is created
-        tz.setHours(time.hour);
-        tz.setMinutes(time.minutes);
-        
-        return datetime.format(tz, 'HH:mm');
-      },
+       
 
         popupDelete(){
           return t('Delete')
