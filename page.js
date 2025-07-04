@@ -182,14 +182,14 @@ class CalendarHandler {
         },
 
          
-       timegridDisplayPrimaryTime({ unit, time, format }) {
-          // unit: 'hour'
-          // time: TZDate object for the hour
-          // format: the default format string (e.g. 'hh a' or 'HH:mm')
-          // Example: display as 24h with leading zero
-          return time.format('HH:mm');
-        },
-          
+       timegridDisplayPrimaryTime: function({ time }) {
+        // Construct a fake TZDate from hour + minutes if needed
+        const tz = new TZDate(); // Or however your TZDate is created
+        tz.setHours(time.hour);
+        tz.setMinutes(time.minutes);
+        
+        return datetime.format(tz, 'HH:mm');
+      },
 
         popupDelete(){
           return t('Delete')
