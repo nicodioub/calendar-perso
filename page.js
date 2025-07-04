@@ -82,12 +82,7 @@ class CalendarHandler {
       }
     },
     week:{
-      timeGrid:{
-        borderRight: this._borderStyle,
-      },
-      timeGridLeft:{
-        borderRight: this._borderStyle,
-      },
+      
       panelResizer:{
         border: this._borderStyle,
       },
