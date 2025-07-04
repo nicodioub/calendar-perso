@@ -184,9 +184,11 @@ class CalendarHandler {
         },
 
         timegridDisplayPrimaryTime({ time }) {
-        // Always display as 2-digit 24h (ex: 08:00, 13:00)
-        return String(time).padStart(2, '0') + ':00';
-         },  
+        const hh = String(time.hour).padStart(2, '0');
+        const mm = String(time.minutes).padStart(2, '0');
+        return `${hh}:${mm}`;
+        },  
+
         popupDelete(){
           return t('Delete')
         },
