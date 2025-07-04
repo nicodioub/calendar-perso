@@ -185,7 +185,7 @@ class CalendarHandler {
        timegridDisplayPrimaryTime: function(time) {
                 //var meridiem = time.hour < 12 ? 'am' : 'pm';
                 
-                return time.hour  + ':00'; // + meridiem;
+                return String(time.hour)  + ':00'; // + meridiem;
             },
           
 
