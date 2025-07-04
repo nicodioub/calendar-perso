@@ -154,7 +154,6 @@ class CalendarHandler {
         hourFormat: 'HH',
         locale:'fr',
         alldayView: false, // Hide the all-day section in week view.
-        allday:false,
        
       },
       month: {
