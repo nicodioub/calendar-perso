@@ -162,13 +162,7 @@ class CalendarHandler {
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
         alldayView: false,
       },
-      timezone: {
-      zones: [
-        {
-          timezoneName: 'Europe/Paris',
-        },
-      ],
-    },
+      
       usageStatistics: false,
       theme: this._calendarTheme(),
       defaultView: 'week',
