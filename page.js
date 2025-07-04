@@ -182,6 +182,11 @@ class CalendarHandler {
           const sanitizedTitle = title.replace('"','&quot;').trim();
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
+
+        timegridDisplayPrimaryTime({ time }) {
+        // Always display as 2-digit 24h (ex: 08:00, 13:00)
+        return String(time).padStart(2, '0') + ':00';
+         },  
         popupDelete(){
           return t('Delete')
         },
