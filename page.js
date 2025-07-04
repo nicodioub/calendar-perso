@@ -182,13 +182,12 @@ class CalendarHandler {
         },
 
          
-        timegridDisplayPrimaryTime: function(time) {
+        timegridDisplayPrimaryTime({ time }) {
           const hour = String(time.hour).padStart(2, '0');
           const minutes = String(time.minutes).padStart(2, '0');
           return `${hour}:${minutes}`;
         },
-
-        timegridDisplayTime: function(time) {
+        timegridDisplayTime({ time }) {
           const hour = String(time.hour).padStart(2, '0');
           const minutes = String(time.minutes).padStart(2, '0');
           return `${hour}:${minutes}`;
