@@ -172,11 +172,7 @@ class CalendarHandler {
       defaultView: 'week',
       isReadOnly,
       template: {
-        time(event) {
-          const {title} = event;
-          const sanitizedTitle = title.replace('"','&quot;').trim();
-          return `<span title="${sanitizedTitle}">${title}</span>`;
-        },
+        
         allday(event) {
           const {title} = event;
           const sanitizedTitle = title.replace('"','&quot;').trim();
