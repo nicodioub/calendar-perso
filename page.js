@@ -183,14 +183,10 @@ class CalendarHandler {
 
          template: {
             timegridDisplayPrimaryTime: function(time) {
-                var meridiem = time.hour < 12 ? 'am' : 'pm';
-
-                return time.hour + ' ' + meridiem;
+                return time.hour + ':00'; // + meridiem;
             },
             timegridDisplayTime: function(time) {
-                var meridiem = time.hour < 12 ? 'am' : 'pm';
-
-                return time.hour + ' ' + meridiem;
+                  return time.hour + ':00'; // + meridiem;
             }
         },
         popupDelete(){
