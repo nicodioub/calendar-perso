@@ -172,6 +172,8 @@ class CalendarHandler {
       defaultView: 'week',
       isReadOnly,
       template: {
+
+        
         time(event) {
           const {title} = event;
           const sanitizedTitle = title.replace('"','&quot;').trim();
@@ -183,7 +185,17 @@ class CalendarHandler {
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
 
-        
+        timegridDisplayPrimayTime: function(time) {
+                //var meridiem = time.hour < 12 ? 'am' : 'pm';
+                
+                return time.hour + ':00'; // + meridiem;
+            },
+            timegridDisplayTime: function(time) {
+                //var meridiem = time.hour < 12 ? 'am' : 'pm';
+
+                return time.hour + ':00'; // + meridiem;
+            },
+            
         popupDelete(){
           return t('Delete')
         },
