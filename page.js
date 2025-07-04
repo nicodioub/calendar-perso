@@ -185,16 +185,40 @@ class CalendarHandler {
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
 
-        timegridDisplayPrimaryTime: function(time) {
-                //var meridiem = time.hour < 12 ? 'am' : 'pm';
-                
-                return time.hour + ':00'; // + meridiem;
-            },
-            timegridDisplayTime: function(time) {
-                //var meridiem = time.hour < 12 ? 'am' : 'pm';
-
-                return time.hour + ':00'; // + meridiem;
-            },
+        timegridDisplayPrimaryTime: function (time: any) {
+          const dateString = time.time?.d?.d;
+          if (!dateString) {
+            console.error("Date not found in object", time);
+            return "";
+          }
+          const date = new Date(dateString);
+          if (isNaN(date.getTime())) {
+            console.error("Invalid Date", dateString);
+            return "";
+          }
+          return date.toLocaleTimeString("fr-FR", {
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false,
+          });
+        },
+        timegridDisplayTime: function (time: any) {
+          const dateString = time.time?.d?.d;
+          if (!dateString) {
+            console.error("Date not found in object", time);
+            return "";
+          }
+          const date = new Date(dateString);
+          if (isNaN(date.getTime())) {
+            console.error("Invalid Date", dateString);
+            return "";
+          }
+          return date.toLocaleTimeString("fr-FR", {
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false,
+          });
+        },
 
         popupDelete(){
           return t('Delete')
