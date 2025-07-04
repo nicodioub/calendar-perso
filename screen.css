@@ -525,8 +525,3 @@ input:checked + label {
   color: inherit;
 }
 
-
-/* Masquer les heures sur la gauche dans la vue semaine/jour ToastUI Calendar */
-.toastui-calendar-timegrid-hour {
-  display: none !important;
-}
