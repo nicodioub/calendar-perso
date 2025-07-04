@@ -163,7 +163,7 @@ class CalendarHandler {
       timezone: {
       zones: [
         {
-          timezoneName: 'Europe/Paris',
+          timezoneName: 'Europe/London',
         },
       ],
     },
