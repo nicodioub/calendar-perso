@@ -143,6 +143,8 @@ class CalendarHandler {
     }}
   }
 
+  
+
   _getCalendarOptions() {
     return {
       week: {
@@ -185,17 +187,13 @@ class CalendarHandler {
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
 
-        timegridDisplayPrimaryTime: function(time) {
-        var meridiem = time.hour < 12 ? 'am' : 'pm';
-
-        return time.hour + ' ' + meridiem;
-    },
-    timegridDisplayTime: function(time) {
-        var meridiem = time.hour < 12 ? 'am' : 'pm';
-
-        return time.hour + ' ' + meridiem;
-    },
-
+         timegridDisplayPrimaryTime({ time }) {
+          // Display as 24h format
+          return String(time).padStart(2, '0') + ':00';
+        },
+        timegridDisplayTime({ time }) {
+          return String(time).padStart(2, '0') + ':00';
+        },
         popupDelete(){
           return t('Delete')
         },
