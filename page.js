@@ -163,7 +163,7 @@ class CalendarHandler {
       timezone: {
       zones: [
         {
-          timezoneName: 'Europe/London',
+          timezoneName: 'Europe/Paris',
         },
       ],
     },
@@ -185,7 +185,7 @@ class CalendarHandler {
         popupDelete(){
           return t('Delete')
         },
-        poupSave(){
+        popupSave(){
           return t('Save')
         },
         popupEdit(){
