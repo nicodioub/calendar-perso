@@ -168,26 +168,31 @@ class CalendarHandler {
       defaultView: 'week',
       isReadOnly,
       template: {
-  // Affichage du contenu de l'événement dans la grille horaire
-  time(schedule) {
-    return getTimeTemplate(schedule, false);
-  },
 
-  // Heure principale dans la colonne de gauche (format 24h)
-  timegridDisplayPrimaryTime({ time }) {
-    return datetime.leadingZero(time.hour, 2) + ':' + datetime.leadingZero(time.minutes, 2);
-  },
+        
+        time(event) {
+          const {title} = event;
+          const sanitizedTitle = title.replace('"','&quot;').trim();
+          return `<span title="${sanitizedTitle}">${title}</span>`;
+        },
+        allday(event) {
+          const {title} = event;
+          const sanitizedTitle = title.replace('"','&quot;').trim();
+          return `<span title="${sanitizedTitle}">${title}</span>`;
+        },
 
-  // Heure secondaire pour les fuseaux horaires additionnels
-  timegridDisplayTime({ time }) {
-    return datetime.leadingZero(time.hour, 2) + ':' + datetime.leadingZero(time.minutes, 2);
-  },
+         
+        timegridDisplayPrimaryTime: function(time) {
+        var meridiem = time.hour < 12 ? 'xx':'xx';
 
-  // Affichage dans les événements (infobulle)
-  allday(event) {
-    const sanitizedTitle = event.title.replace('"','&quot;').trim();
-    return `<span title="${sanitizedTitle}">${sanitizedTitle}</span>`;
-  },
+        return time.hour + ' ' + meridiem;
+      },
+      timegridDisplayTime: function(time) {
+          var meridiem = time.hour < 12 ? 'xx' : 'xx';
+
+          return time.hour + ' ' + meridiem;
+      },
+
         popupDelete(){
           return t('Delete')
         },
