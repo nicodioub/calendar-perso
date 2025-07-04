@@ -101,7 +101,9 @@ class CalendarHandler {
       dayGridLeft:{
         borderRight: this._borderStyle,
       },
-      
+      timeGridHourLine:{
+        borderBottom: this._borderStyle
+      },
       gridSelection: this._accentColor,
 
       pastTime:{
