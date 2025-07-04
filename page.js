@@ -185,7 +185,7 @@ class CalendarHandler {
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
 
-        timegridDisplayPrimayTime: function(time) {
+        timegridDisplayPrimaryTime: function(time) {
                 //var meridiem = time.hour < 12 ? 'am' : 'pm';
                 
                 return time.hour + ':00'; // + meridiem;
@@ -195,7 +195,7 @@ class CalendarHandler {
 
                 return time.hour + ':00'; // + meridiem;
             },
-            
+
         popupDelete(){
           return t('Delete')
         },
