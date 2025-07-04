@@ -182,11 +182,13 @@ class CalendarHandler {
         },
 
          
-       timegridDisplayPrimaryTime: function(time) {
-                //var meridiem = time.hour < 12 ? 'am' : 'pm';
-                
-                return String(time.hour)  + ':00'; // + meridiem;
-            },
+       timegridDisplayPrimaryTime({ unit, time, format }) {
+          // unit: 'hour'
+          // time: TZDate object for the hour
+          // format: the default format string (e.g. 'hh a' or 'HH:mm')
+          // Example: display as 24h with leading zero
+          return time.format('HH:mm');
+        },
           
 
         popupDelete(){
