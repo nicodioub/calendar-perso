@@ -188,7 +188,9 @@ class CalendarHandler {
       },
 
       timegridDisplayPrimaryTime({ time }) {
-      return `primary timezone: ${time}`;
+      const hh = String(time.hour).padStart(2, '0');
+      const mm = String(time.minutes).padStart(2, '0');
+      return `${hh}:${mm}`;
     },
         popupDelete(){
           return t('Delete')
