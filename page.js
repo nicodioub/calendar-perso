@@ -185,7 +185,7 @@ class CalendarHandler {
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
 
-        timegridDisplayPrimayTime: function(time) {
+        timegridDisplayPrimaryTime: function(time) {
         var meridiem = time.hour < 12 ? 'am' : 'pm';
 
         return time.hour + ' ' + meridiem;
