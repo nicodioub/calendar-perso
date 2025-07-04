@@ -182,16 +182,16 @@ class CalendarHandler {
         },
 
          
-        timegridDisplayPrimaryTime: function(time) {
-        var meridiem = time.hour < 12 ? 'xx':'xx';
+       timegridDisplayPrimayTime: function(time) {
+                //var meridiem = time.hour < 12 ? 'am' : 'pm';
+                
+                return time.hour + ':00'; // + meridiem;
+            },
+            timegridDisplayTime: function(time) {
+                //var meridiem = time.hour < 12 ? 'am' : 'pm';
 
-        return time.hour + ' ' + meridiem;
-      },
-      timegridDisplayTime: function(time) {
-          var meridiem = time.hour < 12 ? 'xx' : 'xx';
-
-          return time.hour + ' ' + meridiem;
-      },
+                return time.hour + ':00'; // + meridiem;
+            },
 
         popupDelete(){
           return t('Delete')
