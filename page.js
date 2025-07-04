@@ -154,6 +154,7 @@ class CalendarHandler {
         hourFormat: 'HH',
         locale:'fr',
         alldayView: false, // Hide the all-day section in week view.
+        allday:false,
        
       },
       month: {
@@ -172,7 +173,11 @@ class CalendarHandler {
       defaultView: 'week',
       isReadOnly,
       template: {
-        
+        time(event) {
+          const {title} = event;
+          const sanitizedTitle = title.replace('"','&quot;').trim();
+          return `<span title="${sanitizedTitle}">${title}</span>`;
+        },
         allday(event) {
           const {title} = event;
           const sanitizedTitle = title.replace('"','&quot;').trim();
