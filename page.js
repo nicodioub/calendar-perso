@@ -182,11 +182,15 @@ class CalendarHandler {
         },
 
          
-        timegridDisplayPrimaryTime: function(time) {
-            return time.hour + ':00'; // + meridiem;
+        timegridDisplayPrimaryTime({ time }) {
+          const hh = String(time.hour).padStart(2, '0');
+          const mm = String(time.minutes).padStart(2, '0');
+          return `${hh}:${mm}`;
         },
-        timegridDisplayTime: function(time) {
-              return time.hour + ':00'; // + meridiem;
+        timegridDisplayTime({ time }) {
+          const hh = String(time.hour).padStart(2, '0');
+          const mm = String(time.minutes).padStart(2, '0');
+          return `${hh}:${mm}`;
         },
         
         popupDelete(){
