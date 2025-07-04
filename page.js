@@ -187,6 +187,10 @@ class CalendarHandler {
       return `sub timezone: ${time}`;
       },
 
+      timegridDisplayTime({ time }) {
+      return `sub timezone: ${time}`;
+    },
+
         popupDelete(){
           return t('Delete')
         },
