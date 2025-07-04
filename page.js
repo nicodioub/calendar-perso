@@ -165,7 +165,7 @@ class CalendarHandler {
       return `<span>${hh}:${mm} ${event.title}</span>`;
     },
     // Surcharge de l’heure affichée dans la sidebar
-    timegridDisplayTime(time) {
+    timegridDisplayPrimayTime(time) {
       const hh = String(time.hour).padStart(2, '0');
       const mm = String(time.minutes).padStart(2, '0');
       return `${hh}:${mm}`;
