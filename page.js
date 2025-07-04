@@ -168,31 +168,26 @@ class CalendarHandler {
       defaultView: 'week',
       isReadOnly,
       template: {
+  // Affichage du contenu de l'événement dans la grille horaire
+  time(schedule) {
+    return getTimeTemplate(schedule, false);
+  },
 
-        
-        time(event) {
-          const {title} = event;
-          const sanitizedTitle = title.replace('"','&quot;').trim();
-          return `<span title="${sanitizedTitle}">${title}</span>`;
-        },
-        allday(event) {
-          const {title} = event;
-          const sanitizedTitle = title.replace('"','&quot;').trim();
-          return `<span title="${sanitizedTitle}">${title}</span>`;
-        },
+  // Heure principale dans la colonne de gauche (format 24h)
+  timegridDisplayPrimaryTime({ time }) {
+    return datetime.leadingZero(time.hour, 2) + ':' + datetime.leadingZero(time.minutes, 2);
+  },
 
-         
-        timegridDisplayPrimayTime: function(time) {
-        var meridiem = time.hour < 12 ? 'am' : 'pm';
+  // Heure secondaire pour les fuseaux horaires additionnels
+  timegridDisplayTime({ time }) {
+    return datetime.leadingZero(time.hour, 2) + ':' + datetime.leadingZero(time.minutes, 2);
+  },
 
-        return time.hour + ' ' + meridiem;
-      },
-      timegridDisplayTime: function(time) {
-          var meridiem = time.hour < 12 ? 'am' : 'pm';
-
-          return time.hour + ' ' + meridiem;
-      },
-
+  // Affichage dans les événements (infobulle)
+  allday(event) {
+    const sanitizedTitle = event.title.replace('"','&quot;').trim();
+    return `<span title="${sanitizedTitle}">${sanitizedTitle}</span>`;
+  },
         popupDelete(){
           return t('Delete')
         },
