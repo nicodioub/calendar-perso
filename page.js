@@ -181,14 +181,14 @@ class CalendarHandler {
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
 
-         template: {
-            timegridDisplayPrimaryTime: function(time) {
-                return time.hour + ':00'; // + meridiem;
-            },
-            timegridDisplayTime: function(time) {
-                  return time.hour + ':00'; // + meridiem;
-            }
+         
+        timegridDisplayPrimaryTime: function(time) {
+            return time.hour + ':00'; // + meridiem;
         },
+        timegridDisplayTime: function(time) {
+              return time.hour + ':00'; // + meridiem;
+        },
+        
         popupDelete(){
           return t('Delete')
         },
