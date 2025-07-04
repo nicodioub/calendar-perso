@@ -155,21 +155,6 @@ class CalendarHandler {
         locale:'fr',
         alldayView: false, // Hide the all-day section in week view.
       },
-
-      template: {
-    // Pour les événements (optionnel si déjà défini)
-    time(event) {
-      const start = event.start;
-      const hh = String(start.getHours()).padStart(2, '0');
-      const mm = String(start.getMinutes()).padStart(2, '0');
-      return `<span>${hh}:${mm} ${event.title}</span>`;
-    },
-    // Surcharge de l’heure affichée dans la sidebar
-    timegridDisplayPrimayTime(time) {
-      const hh = String(time.hour).padStart(2, '0');
-      const mm = String(time.minutes).padStart(2, '0');
-      return `${hh}:${mm}`;
-    },
       month: {
         dayNames: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
         alldayView: false,
