@@ -182,7 +182,7 @@ class CalendarHandler {
         },
 
          template: {
-            timegridDisplayPrimayTime: function(time) {
+            timegridDisplayPrimaryTime: function(time) {
                 var meridiem = time.hour < 12 ? 'am' : 'pm';
 
                 return time.hour + ' ' + meridiem;
