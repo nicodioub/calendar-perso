@@ -182,16 +182,18 @@ class CalendarHandler {
         },
 
          
-        timegridDisplayPrimaryTime(time) {
-          const hh = String(time.hour).padStart(2, '0');
-          const mm = String(time.minutes).padStart(2, '0');
-          return `${hh}:${mm}`;
+        timegridDisplayPrimaryTime: function(time) {
+          const hour = String(time.hour).padStart(2, '0');
+          const minutes = String(time.minutes).padStart(2, '0');
+          return `${hour}:${minutes}`;
         },
-        timegridDisplayTime(time) {
-          const hh = String(time.hour).padStart(2, '0');
-          const mm = String(time.minutes).padStart(2, '0');
-          return `${hh}:${mm}`;
+
+        timegridDisplayTime: function(time) {
+          const hour = String(time.hour).padStart(2, '0');
+          const minutes = String(time.minutes).padStart(2, '0');
+          return `${hour}:${minutes}`;
         },
+
 
         
         popupDelete(){
