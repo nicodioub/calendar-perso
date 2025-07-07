@@ -181,14 +181,7 @@ class CalendarHandler {
           return `<span title="${sanitizedTitle}">${title}</span>`;
         },
 
-         timegridDisplayPrimaryTime({ time }) {
-            // time is a TZDate object, so you can use .format()
-            return time.format('HH:mm');
-          },
-          timegridDisplayTime({ time }) {
-            return time.format('HH:mm');
-          },
-       
+        
 
         popupDelete(){
           return t('Delete')
